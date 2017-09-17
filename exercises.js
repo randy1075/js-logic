@@ -437,13 +437,16 @@ console.log ("west:  ", west);
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 function subways (special){
 	for (i = 0; i < special.length; i++){
-		console.log (special[i]);
 		if (i % 2 === 1){
-			
+		console.log (special[i]);
+		special.splice(i, 1, "Classic Tuna"); 
+      	special[i] = "Classic Tuna";	
 		}
 	}
+	return special;
 }
-
+subways(subOftheDay);
+console.log(subOftheDay);
 /*
 Final Boss
  * #20
