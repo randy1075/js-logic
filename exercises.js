@@ -460,8 +460,24 @@ Final Boss
 */
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
- 
-  
+ function removeLetter (str){
+ 	var newArr = [];  //note: I did not figure this out, came from solutions
+ 	for (var i = 0; i < str.length; i++){
+ 		// note: solutions console.log (str[i]);
+ 		//return [i].splice (A, a);
+ 		if(str[i] !== 'a' && str[i] !== "A"){    //note: came from solutions
+        newArr.push(str[i]);	//came from solutions
+ 			}
+ 				//console.log(newArr);     //came from solutions
+ 				//return newArr;           //came from solutions   
+ 		}
+	console.log(newArr);     //came from solutions
+ 	return newArr;           //came from solutions   
+
+ 	//newArr.push(str[i]); 
+ 	//return [i].splice (A, a);
+ }
+  removeLetter(phrase);
   
 
 
